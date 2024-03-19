@@ -83,7 +83,7 @@ SET total_expenses = monthly_tuition_fees + housing + food + transportation + bo
 					technology + health_wellness + miscellaneous ;
                     
 ALTER TABLE income
-ADD COLUMN total_income  INT AFTER financial_aid;
+ADD total_income INT AFTER financial_aid;
 
 UPDATE income
 SET total_income = monthly_income + financial_aid ;
